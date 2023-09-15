@@ -181,6 +181,15 @@ void InputReading()
 	 * 	0= 
 	 * 	1= 
 	 * 	2= 
+	 *
+	 * iGrainBoundaryHeliumBehaviour
+	 *
+	 * iGrainBoundaryHeliumDiffusivity
+	 *
+	 * iGrainBoundaryHeliumTrappingRate
+	 *
+	 * iGrainBoundaryHeliumThermalResolution	
+	 *
 	 */
 
 	Sciantix_options[0] = ReadOneSetting("iGrainGrowth", input_settings, input_check);
@@ -320,7 +329,7 @@ void InputReading()
 	Fissionrate_input.resize(Input_history_points);
 	Hydrostaticstress_input.resize(Input_history_points);
 		
-	if(Sciantix_options[21] > 0)
+	if(Sciantix_options[20] > 0)
 		Steampressure_input.resize(Input_history_points);
 
 	Time_end_h = Time_input[Input_history_points - 1];
